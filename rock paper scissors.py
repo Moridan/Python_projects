@@ -10,6 +10,8 @@ while exit == False:
         print("It's a draw, try again")
     elif (player == "Rock" and computer == "Scissors") or (player == "Paper" and computer == "Rock") or (player == "Scissors" and computer == "Paper"):
         print(f"{player} beats {computer}, You win!")
+    elif player not in ("Scissors" or "Rock" or "Paper"):  #Als user verkeerde input geeft opnieuw proberen.
+        print("Invalid choise, try again")
     elif player == 'exit':
         exit = True
     else:
