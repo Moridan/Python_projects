@@ -8,10 +8,8 @@ while exit == False:
     computer = random.choice(choices)
     if player == computer:
         print("It's a draw, try again")
-        print("")
     elif (player == "Rock" and computer == "Scissors") or (player == "Paper" and computer == "Rock") or (player == "Scissors" and computer == "Paper"):
         print(f"{player} beats {computer}, You win!")
-        print("")
     elif player == 'exit':
         exit = True
     else:
